@@ -27,7 +27,7 @@
                     <a href = "#">Rewards Program</a>
                 </li>
                 <li id = "cart-label">
-                    <a href = "cart.html">Cart</a>
+                    <a href = "cart.html" id = "cart-label">Cart</a>
                 </li>
             </ul>
         </nav>
@@ -40,7 +40,7 @@
     <br>
     <div>
         <h1 id="pumpkin-spice-title">Pumpkin Spice Cinnamon Bun</h1>
-        <h2 id = "price">$5.99</h2>
+        <h2 class = "price">$5.99</h2>
         <div class="pumpkin-images">
             <img src = "pumpkin-spice-roll.jpg" alt= "pumpkin spice Cinnamon roll" id="pumpkin">
             <div class = "side-pics">
@@ -55,26 +55,26 @@
                 <p><b>Contains:</b> milk, pumpkin, eggs, yeast & wheat</p>
             </div>
             <div>
-                <div class="glaze-type">
-                    <label for="glaze">Glaze: </label>
-                    <select name="Glaze" id="glaze">
-                        <option value ="blank">-</option>
-                        <option value="none">None</option>
-                        <option value="vanilla-milk">Vanilla-Milk (recommended)</option>
-                        <option value="sugar-milk">Sugar-Milk</option>
-                        <option value="double-chocolate">Double-Chocolate</option>
-                    </select>
-                </div>
-                <div class="quantity">
-                    <label for="quantity">Quantity: </label>
-                    <select name="Quantity" id="quantity">
-                        <option value ="blank">-</option>
-                        <option value="1">1</option>
-                        <option value="3">3</option>
-                        <option value="6">6</option>
-                        <option value="12">12</option>
-                    </select>
-                </div>
+                <form class="food-select" action="">
+                    <div class="glaze-type">
+                        <label for="glaze">Glaze: </label>
+                        <select name="Glaze" id="glaze" required>
+                            <option value ="none" selected>None</option>
+                            <option value="vanilla-milk">Vanilla-Milk (Recommended)</option>
+                            <option value="sugar-milk">Sugar-Milk</option>
+                            <option value="double-chocolate">Double-Chocolate</option>
+                        </select>
+                    </div>
+                    <div class="quantity">
+                        <label for="quantity">Quantity: </label>
+                        <select name="Quantity" id="quantity" required>
+                            <option value ="1" selected>1</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                </form>
                 <button type="button" class = "button" onclick="updateCartTab(); myAlert();">Add to Cart</button>               
             </div>
             <br>
