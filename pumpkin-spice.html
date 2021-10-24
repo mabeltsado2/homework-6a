@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Homework 5</title>
+    <title>Homework 6a</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="main.js"></script>
   </head>
   
   <body>
@@ -25,8 +26,8 @@
                 <li>
                     <a href = "#">Rewards Program</a>
                 </li>
-                <li>
-                    <a href = "#">Cart</a>
+                <li id = "cart-label">
+                    <a href = "cart.html">Cart</a>
                 </li>
             </ul>
         </nav>
@@ -74,7 +75,7 @@
                         <option value="12">12</option>
                     </select>
                 </div>
-                <button type="button" class = "button">Add to Cart</button>               
+                <button type="button" class = "button" onclick="updateCartTab(); myAlert();">Add to Cart</button>               
             </div>
             <br>
             <div>

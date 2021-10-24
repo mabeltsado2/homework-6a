@@ -252,11 +252,98 @@ h4 {
     padding-left: 20px;
 }
 
+#cart-items {
+    position: absolute;
+    width: 62px;
+    height: 28px;
+    left: 120px;
+    top: 287px;
+}
+
+#cart-price {
+    position: absolute;
+    width: 49px;
+    height: 28px;
+    left: 560px;
+    top: 287px;
+
+}
+
+#cart-quantity {
+    position: absolute;
+    width: 77px;
+    height: 28px;
+    left: 860px;
+    top: 287px;
+}
+
+#cart-total {
+    position: absolute;
+    width: 160px;
+    height: 28px;
+    left: 1160px;
+    top: 287px;
+
+}
+
 .cart-header {
-    display: block;
-    height: 50px;
-    
+    float: left;
     list-style-type: none;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    font-weight: bold;
+}
+
+#line {
+    position: absolute;
+    width: 1200px;
+    height: 0px;
+    left: 95px;
+    top: 300px;
+    border: 1px solid #000000;
+}
+
+#cart-image {
+    position: absolute;
+    width: 118px;
+    height: 125px;
+    left: 100px;
+    top: 356px;
+}
+
+#cart-text {
+    position: absolute;
+    width: 250px;
+    height: 73px;
+    left: 225px;
+    top: 382px;
+}
+
+#item-price {
+    position: absolute;
+    left: 565px;
+    top: 382px;
+}
+
+#item-quantity {
+    position: absolute;
+    left: 875px;
+    top: 395px;
+}
+
+#item-total {
+    position: absolute;
+    left: 1185px;
+    top: 382px;
+}
+
+#cart-button {
+    position: absolute;
+    left: 1140px;
+    top: 830px;
+}
+
+#cart-footer {
+    position: absolute;
+    left: 0px;
+    top: 980px;
 }

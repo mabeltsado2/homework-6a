@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Homework 5</title>
+    <title>Homework 6a</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
   </head>
   
@@ -26,12 +26,12 @@
                     <a href = "#">Rewards Program</a>
                 </li>
                 <li>
-                    <a href = "#">Cart</a>
+                    <a href = "cart.html">Cart</a>
                 </li>
             </ul>
         </nav>
     </div>
-    <img src="BunBun-Logo.png" alt="Bun Bun Logo" id = "logo">
+    <a href = "index.html"><img src="BunBun-Logo.png" alt="Bun Bun Logo" id = "logo"></a>
     <br>
     <br>
     <br>
@@ -41,16 +41,37 @@
         <li id = "cart-items">
             ITEMS
         </li>
-        <li>
+        <li id = "cart-price">
             PRICE
         </li>
-        <li>
+        <li id = "cart-quantity">
             QUANTITY
         </li>
-        <li>
+        <li id = "cart-total">
             TOTAL PRICE
         </li>
     </ul>
+    <hr id = line>
+
+    <img src = "pumpkin-spice-roll.jpg" alt= "pumpkin spice Cinnamon roll" class = "roll-pics" id="cart-image">
+    <p id = "cart-text" class = "roll-pics"><b>Pumpkin Spice Cinnamon Roll</b>
+        <br>
+        Glaze:XXXX
+    </p>
+    <p id = "item-price">$5.99</p>
+
+    <select name="Quantity" id="item-quantity">
+        <option value ="blank">-</option>
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+    </select>
+
+    <p id = "item-total">$XX.XX</p>
+
+    <button type="button" class = "button" id = "cart-button">Checkout</button>
+
     <br>
     <br>
     <br>
@@ -59,7 +80,7 @@
     <br>
 
     <br>
-    <footer>
+    <footer id = "cart-footer">
         <div class = "footer">
             <div>
                 <h4>contact us:
