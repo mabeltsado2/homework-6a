@@ -1,9 +1,11 @@
-function foodItem(quantity, options, price, imgsrc){
+function cinnaRoll(quantity, options, price, imgsrc){
     this.quantity = quantity;
     this.options = options;
     this.price = price;
     this.imgsrc = imgsrc;
 }
+
+
 const cartArr = [];
 
 function updateCartTab() {
@@ -13,8 +15,9 @@ function updateCartTab() {
     let cartNum = cartArr.length - 1; 
 
     if (cartNum > 0){
-    document.getElementById('cart-label').innerHTML
-        = "Cart("+cartNum+ ")";
+        document.getElementById('cart-label').href = "cart.html";
+        document.getElementById('cart-label').textContent = "Cart("+cartNum+ ")";
+        
     } else {
         document.getElementById('cart-label').innerHTML
         = "Cart"
@@ -22,19 +25,8 @@ function updateCartTab() {
 }
 
 updateCartTab ();
-
+ 
 function myAlert() {
     alert("Items Added to Cart!");
   }
 
-document.getElementById("quantity").change(function() {
-    if (this.value == "1") {
-        document.getElementsByClassName("price").text("$5.99");
-    } else if (this.value == "3") {
-        document.getElementsByClassName("price").text("$12.99");
-    } else if (this.value == "6") {
-        document.getElementsByClassName("price").text("$24.99");
-    } else if (this.value == "12") {
-        document.getElementsByClassName("price").text("$49.99");
-    }
-});
